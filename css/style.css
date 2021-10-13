@@ -132,79 +132,78 @@ ul li {
     top: 1px;
 }
 
-.header {
-    position: relative;
-    padding-top: 13px
-}
-
-.header::before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.12);
-    top: 73px
-}
-
-.header__img-one {
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-.header__img-two {
-    position: absolute;
-    right: 0;
-    top: 80px
-}
-
-.header__wrapper {
+.thanks-block {
+    padding-top: 42px;
+    padding-bottom: 10px;
     text-align: center;
     position: relative;
-    margin: 0 auto
 }
 
-.header__title {
-    margin-top: 55px;
+.thanks-block__title {
+    font-family: "DINPro", sans-serif;
     font-size: 34px;
-    font-family: "DIN Pro";
-    color: #271e63;
+    line-height: 40px;
+    color: #E30824;
+    font-weight: 700;
 }
 
-.header__subtitle {
+.thanks-block__subtitle {
+    margin-top: 43px;
+    font-family: "DINPro", sans-serif;
     font-size: 30px;
     line-height: 35px;
+    color: #271E63;
     font-weight: 700;
-    margin-top: 47px;
-    color: #271e63;
 }
 
-.header__item {
-    margin-top: 40px
+.thanks-block__item-img {
+    margin-top: 35px;
 }
 
-.header__item-name {
+.thanks-block__item-name {
+    margin-top: 10px;
+    font-family: "DINPro", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
+    color: #271E63;
     font-weight: 500;
-    margin-top: 8px;
-    color: #271e63;
 }
 
-.header__item-subname {
+.thanks-block__item-subname {
     font-size: 14px;
     line-height: 16px;
+    color: #271E63;
+    margin-top: 5px;
+    font-family: "DINPro", sans-serif;
     font-weight: 500;
-    margin-top: 6px;
-    color: #271e63;
 }
 
-.header__item-subname a {
-    font-size: 14px;
-    color: #271e63;
+.thanks-block__item-subname a {
+    text-decoration-line: underline;
     font-weight: 700;
-    text-decoration: none;
-    border-bottom: 2px solid #271e63
+    color: #271E63;
+}
+
+.thanks-block__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 830px) {
+    .thanks-block__img {
+        display: none
+    }
+}
+
+@media (max-width: 425px) {
+    .thanks-block__title {
+        margin-top: 29px
+    }
+    .thanks-block__subtitle {
+        margin-top: 19px
+    }
 }
 
 .index-img {
@@ -1548,19 +1547,4 @@ select.input-field {
 
 .cld2 span {
     font-family: 'Roboto-Medium';
-}
-
-@media (max-width: 830px) {
-    .header__img {
-        display: none
-    }
-}
-
-@media (max-width: 425px) {
-    .header__title {
-        margin-top: 29px
-    }
-    .header__subtitle {
-        margin-top: 19px
-    }
 }
