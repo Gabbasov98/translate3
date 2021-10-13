@@ -1545,3 +1545,18 @@ select.input-field {
 .cld2 span {
     font-family: 'Roboto-Medium';
 }
+
+@media (max-width: 830px) {
+    .header__img {
+        display: none
+    }
+}
+
+@media (max-width: 425px) {
+    .header__title {
+        margin-top: 29px
+    }
+    .header__subtitle {
+        margin-top: 19px
+    }
+}
